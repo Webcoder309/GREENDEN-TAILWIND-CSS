@@ -10,7 +10,7 @@
     <nav class="bg-green-200 p-3 flex justify-between items-center shadow-xl sticky top-0 z-10">
         <h1 class="text-3xl">GREENDEN</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
           
@@ -27,10 +27,29 @@
           </ul>
     </nav>
 
+    
+    <section id="sidenav" class="bg-green-200 fixed z-20 top-0 right-0 text-center transition-all duration-1000" style="width: 30%; height: 50%;right:-50% ;">
+        <div class="text-right p-5">
+            <p id="closenav" class="cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 text-gray-900">
+
+            <li>
+                <a class="hover:underline hover:text-green-900" href="index.html">HOME</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-green-900" href="product.html">PRODUCTS</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-green-900" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+    </section>
+
     <section class="text-center">
         <h1 class="text-center font-bold mt-5 p-5 text-3xl">Our Products</h1>
-        <input type="text" placeholder="Sreach for a product...." class="border border-black mb-5 p-3" style="width: 80%;">
-        <div class="grid grid-cols-2 m-2 md:grid-cols-4">
+        <input id="search" type="text" placeholder="Sreach for a product...." class="border border-black mb-5 p-3" style="width: 80%;">
+        <div id="pro-container" class="grid grid-cols-2 m-2 md:grid-cols-4">
             <div>
                 <img src="image/best-1.jpg" alt="plant" class="inline transform hover:-translate-y-2">
                 <h2 class="font-bold">rose plant</h2>
@@ -58,7 +77,7 @@
             </div>
             <div>
                 <img src="image/best-2.jpg" alt="plant" class="inline transform hover:-translate-y-2">
-                <h2 class="font-bold">rose plant</h2>
+                <h2 class="font-bold">lily plant</h2>
                 <h3 class="font-medium bg-green-400 rounded m-5">$45</h3>
             </div>
             <div>
@@ -68,7 +87,7 @@
             </div>
             <div>
                 <img src="image/best-1.jpg" alt="plant" class="inline transform hover:-translate-y-2">
-                <h2 class="font-bold">rose plant</h2>
+                <h2 class="font-bold">hi plant</h2>
                 <h3 class="font-medium bg-green-400 rounded m-5">$20</h3>
             </div>
             
@@ -80,5 +99,7 @@
         <P class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa modi iusto porro corrupti harum. Quia.</P>
         <p class="font-medium mb-3">@ 2022 GREENDEN.com</p>
     </section>
+
+    <script src="product.js"></script>
 </body>
 </html>

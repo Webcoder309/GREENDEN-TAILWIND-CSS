@@ -10,7 +10,7 @@
     <nav class="bg-green-200 p-3 flex justify-between items-center shadow-xl sticky top-0 z-10">
         <h1 class="text-3xl">GREENDEN</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
           
@@ -26,6 +26,25 @@
             </li>
           </ul>
     </nav>
+
+    
+    <section id="sidenav" class="bg-green-200 fixed z-20 top-0 right-0 text-center transition-all duration-1000" style="width: 30%; height: 50%;right:-50% ;">
+        <div class="text-right p-5">
+            <p id="closenav" class="cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 text-gray-900">
+
+            <li>
+                <a class="hover:underline hover:text-green-900" href="index.html">HOME</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-green-900" href="product.html">PRODUCTS</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-green-900" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+    </section>
 
     <section class="bg-white dark:bg-gray-900">
         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
@@ -55,5 +74,7 @@
         <P class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa modi iusto porro corrupti harum. Quia.</P>
         <p class="font-medium mb-3">@ 2022 GREENDEN.com</p>
     </section>
+
+    <script src="contact.js"></script>
 </body>
 </html>
